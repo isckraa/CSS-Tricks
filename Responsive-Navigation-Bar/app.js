@@ -16,7 +16,10 @@ const navSlide = () => {
             } else {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${time}s`;
             }
-        });    
+        });
+        
+        // Burger animation
+        burger.classList.toggle('toggle');
     });
 }
 
