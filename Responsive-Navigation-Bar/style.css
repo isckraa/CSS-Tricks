@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background: url(img/nature.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -77,7 +82,7 @@ nav {
     transform: translateX(0%);
 }
 
-@-webkit-keyframes navLinkFade{
+@keyframes navLinkFade{
     from {
         opacity: 0;
         transform: translateX(50px);
