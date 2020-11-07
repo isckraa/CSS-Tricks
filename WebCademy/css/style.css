@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F4F4F4;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 870px;
+}
+
+.sidebar {
+    width: 270px;
+    height: 200px;
+    background-color: red;
+}
+
+/* CARDS */
+.card {
+    width: 270px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.card__badges {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    left: 15px;
+}
+
+.card__badge--1 {
+    padding: 3px 10px;
+    background-color: #FFCF26;
+    color: #000;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.card__badge--2 {
+    padding: 3px 10px;
+    background-color: #11BE75;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.card__image {
+    height: 200px;
+}
+
+.card__content {
+    padding: 15px 15px 20px;
+}
+
+.card__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.16;
+    color: #000;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.card__term {
+    font-size: 14px;
+    line-height: 1.14;
+    color: #000;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.card__metro {
+    font-size: 14px;
+    line-height: 1.14;
+    color: #000;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.card__metro::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 11px;
+    background-image: url('../assets/icons/Metro.svg');
+    background-repeat: no-repeat;
+    background-size: inherit;
+    margin-right: 10px;
+}
+
+.card__address {
+    font-size: 14px;
+    line-height: 1.14;
+    color: #777777;
+}
