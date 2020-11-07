@@ -39,6 +39,7 @@ body {
     background-color: #fff;
     position: relative;
     margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .card__badges {
@@ -115,4 +116,28 @@ body {
     font-size: 14px;
     line-height: 1.14;
     color: #777777;
+}
+
+.more {
+    width: 100%;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.more__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.more__title {
+    font-size: 18px;
+    line-height: 0.85;
+    color: #4290C9;
 }
