@@ -153,5 +153,81 @@ body {
 .sidebar {
     width: 270px;
     height: 200px;
-    background-color: red;
+    /* background-color: red; */
+}
+.widget__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.widget__title {
+    font-size: 18px;
+    line-height: 0.85;
+    color: #000;
+    font-weight: bold;
+}
+.widget__arrow {
+    width: 24px;
+    height: 24px;
+}
+
+.location__row {
+    display: flex;
+}
+
+.location__row:first-child {
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #D6D6D6;
+    border-bottom: none;
+}
+
+.location__row:last-child {
+    overflow: hidden;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid #D6D6D6;
+}
+
+.location__checkbox {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    appearance: none;
+}
+
+.location__checkbox:checked + .location__btn {
+    background-color: #FFCF26;
+}
+.location__checkbox:checked + .location__btn:hover {
+    background-color: #e7bc21;
+}
+
+.location__btn {
+    flex-grow: 1;
+
+    padding: 0 15px;
+    height: 50px;
+    
+    background-color: #F4F4F4;
+    border: none;
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    line-height: 50px;
+    color: #3C3C3C;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+.location__btn:hover {
+    background-color: #FFF;
+}
+
+.location__btn::selection {
+    background-color: transparent;
 }
