@@ -27,12 +27,6 @@ body {
     width: 870px;
 }
 
-.sidebar {
-    width: 270px;
-    height: 200px;
-    background-color: red;
-}
-
 /* CARDS */
 .card {
     width: 270px;
@@ -40,6 +34,14 @@ body {
     position: relative;
     margin-bottom: 30px;
     border-radius: 4px;
+    text-decoration: none;
+    top: 0;
+    transition: all 0.2s ease-in;
+}
+
+.card:hover {
+    top: -10px;
+    background-color: rgb(247, 242, 191);
 }
 
 .card__badges {
@@ -128,6 +130,11 @@ body {
     padding-bottom: 30px;
     cursor: pointer;
     border-radius: 4px;
+    transition: background-color 0.2s ease-in;
+}
+
+.more:hover {
+    background-color: #d3d2d2;
 }
 
 .more__icon {
@@ -140,4 +147,11 @@ body {
     font-size: 18px;
     line-height: 0.85;
     color: #4290C9;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 270px;
+    height: 200px;
+    background-color: red;
 }
