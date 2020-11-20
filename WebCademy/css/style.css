@@ -396,3 +396,41 @@ body {
     line-height: 19px;
     color: #3C3C3C;
 }
+
+/* CTA Filters */
+.form__filters-btn {
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form__filters-btn:first-child {
+    background-color: #FFCF26;
+    padding: 15px 0;
+    border: none;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease-in;
+}
+.form__filters-btn:first-child:hover {
+    background-color: #e4ba22;
+}
+.form__filters-btn:last-child {
+    border: 1px solid #D6D6D6;
+    padding: 13px 0;
+    transition: background-color 0.2s ease-in;
+}
+.form__filters-btn:last-child:hover {
+    background-color: #d3d2d2;
+}
+.form__close-icon {
+    margin-right: 6px;
+}
