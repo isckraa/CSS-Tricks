@@ -27,6 +27,10 @@ body {
     width: 870px;
 }
 
+.main + .sidebar {
+    margin-left: 30px;
+}
+
 /* CARDS */
 .card {
     width: 270px;
@@ -152,7 +156,7 @@ body {
 /* SIDEBAR */
 .sidebar {
     width: 270px;
-    height: 200px;
+    /* height: 200px; */
 }
 .widget {
     margin-bottom: 30px;
@@ -320,6 +324,7 @@ body {
     border: 1px solid #777777;
     border-radius: 2px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .options__btn {
     font-family: Roboto;
@@ -368,6 +373,7 @@ body {
     left: 19px;
 }
 .services__checkbox-fake {
+    cursor: pointer;
     width: 37px;
     height: 20px;
     border-radius: 10px;
@@ -433,4 +439,54 @@ body {
 }
 .form__close-icon {
     margin-right: 6px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1220px) {
+    .row {
+        justify-content: space-evenly;
+    }
+    .main {
+        padding-left: 20px;
+        width: 600px;
+        justify-content: space-evenly;
+    }
+    .sidebar {
+        padding-right: 20px;
+        min-width: 270px;
+    }
+    .main + .sidebar {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+        width: 100%;
+        max-width: 700px;
+        padding-right: 20px;
+    } 
+    .sidebar {
+        display: none;
+    }
+    .card:nth-child(odd) {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 606px) {
+    .main {
+        max-width: 400px;
+    }
+    .card {
+        width: 100%;
+    }
+    .card:nth-child(odd) {
+        margin-right: 0;
+    }
+    .card__image img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+    }
 }
