@@ -590,7 +590,7 @@ body {
         bottom: 0;
         left: 0;
         background-color: #FFFFFF;
-        padding: 20px;
+        padding: 20px 15px;
         box-shadow: 0 0 20px 4px rgb(0 0 0 / 37%);
         overflow-x: scroll;
         transform: translateX(-150%);
